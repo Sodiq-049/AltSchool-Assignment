@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- the header section -->
+
+    <div id="top" id="media"></div>
+    <header>
+        <div class="container">
+            <h1>Welcome to my World</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="../index1.html">Home</a></li>
+                    <li><a href="../form.html">Form</a></li>
+                    <li><a href="./index2.html">Table</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>    
+            </nav>
+        </div>    
+    </header>    
+
+    <h2>Media Element Existing In HTML</h2>
+
+    <main>
+        <!-- picture section -->
+        <section class="picture">
+            <h2>Picture</h2>
+            <picture>
+                <source media="(max-width: 600px)" srcset="../Asset/image/My-picture.jpg">
+                <source media="(max-width: 1200px)" srcset="../Asset/image/My-picture.jpg">
+                <source media="(min-width: 1201px)" srcset="../Asset/image/My-picture.jpg">
+                <img src="../Asset/image/My-picture.jpg" alt="A snapshot of my journey" width="200">
+            </picture>
+        </section>
+        
+        <!-- video section -->
+
+        <section class="video" id="video">
+            <h2>Video</h2>
+            <div class="mine">
+                <video controls width="200" heidth="200">
+                    <source src="../Asset/video/my video1.mp4" type="video/mp4">
+                    <source src="../Asset/video/my video1.mp4" type="video/webm">
+                    <source src="../Asset/video/my video1.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>    
+            
+            <div class="not">
+                <video controls width="200" heidth="200">
+                    <source src="../Asset/video/my video 2.mp4" type="video/mp4">
+                    <source src="../Asset/video/my video 2.mp4" type="video/webm">
+                    <source src="../Asset/video/my video 2.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </div>    
+        </section>
+
+        <!-- audio section -->
+
+        <section class="audio" id="audio">
+            <div class="kizz">
+                <img src="https://trendybeatz.com/images/Kizz-Daniel-Double-Artwork.jpg" alt="Double logo" width="322" height="322">
+                <h2>Listen to Kizz Daniel - Double Mp3 Here!</h2>
+                <audio controls>
+                    <source src="../Asset/audio/Kizz-Daniel-Double-(TrendyBeatz.com).mp3" type="audio/mpeg">
+                    <source src="../Asset/audio/Kizz-Daniel-Double-(TrendyBeatz.com).mp3" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>    
+
+            <div class="davido">
+                <img src="https://trendybeatz.com/images/Davido-Timeless-Album-ArtWork.jpg" alt="competition logo">
+                <h2>Listen to Davido - No Competition ft Asake Mp3 Here!</h2>
+                <audio controls>
+                    <source src="../Asset/audio/Davido-No-Competition-feat.Asake-[TrendyBeatz.com].mp3" type="audio/mpeg">
+                    <source src="../Asset/audio/Davido-No-Competition-feat.Asake-[TrendyBeatz.com].mp3" type="audio/ogg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>    
+        </section>
+        
+        <!-- iframe section -->
+
+        <p class="thanks">Thank you for visiting! Let's connect and create something amazing together.</p>
+
+        <!-- footer section -->
+
+        <footer>
+            <section class="e" id="contact">
+                <h2>Contact</h2>
+                <p>
+                    You can contact me via:
+                </p>
+                <p>
+                    <img src="https://cdn-icons-png.flaticon.com/128/1/1257.png" alt="Phone" width="20" height="20"> 09023226940
+                </p>
+                <nav>
+                    <a href="https://www.facebook.com/ogunmola.sodiq.3?mibextid=LQQJ4d"> <img src="../Asset/image/fa.webp" alt="Facebook" width="30" height="30"></a>
+                    <a href="https://www.instagram.com/invites/contact/?igsh=1f5z8xmrs9mfw&utm_content=6n38de8"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" width="30" height="30"></a>
+                    <a href="https://x.com/sodiq_ogunmola"> <img src="../Asset/image/teitter.png" alt="Twitter" width="30" height="30"></a>
+                    <a href="https://www.linkedin.com/in/sodiq-ogunmola-10a111277"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30"></a>
+                </nav>
+            </section>
+
+            <a href="#top">Scroll to Top</a>
+        </footer>    
+    </main>
+</body>
+</html>

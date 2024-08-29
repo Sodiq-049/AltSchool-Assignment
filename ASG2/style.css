@@ -1,0 +1,405 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+/* styling the header */
+
+header{
+    background-color: rgb(11, 11, 68);
+    padding: 20px;
+    color: aliceblue;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover{
+    color: blue;
+}
+
+/* styling the table */
+
+h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+}
+
+caption {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #34495e;
+}
+
+thead th {
+    background-color: #2980b9;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+tbody th {
+    background-color: #3498db;
+    color: #fff;
+    text-align: left;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e6f7ff;
+}
+
+/* styling the media/ picture*/
+
+.picture{
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.picture picture{
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100% auto;
+    height: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.picture img{
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    outline: none;
+}
+
+.picture img:hover{
+    transform: scale(1.05);
+}
+
+/* styling Video */
+
+.video{
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   width: 100%;
+}
+
+.video .mine .not{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video{
+    width: 100% auto;
+    border-radius: 8px;
+    max-width: 600px auto;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    outline: none;
+    transition: transform 0.3s ease;
+}
+
+.video video:hover{
+    transform: scale(1.05);
+}
+
+/* styling Audio */
+
+.audio{
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.audio img {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}  
+
+.audio .davido{
+    margin-top: 100px;
+}
+
+audio {
+    width: 40% auto;
+    outline: none;
+}
+  
+audio::-webkit-media-controls-panel {
+    background-color: #837f7f;
+}
+  
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-timeline {
+    color: #fff;
+}
+  
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+
+/* styling the form */
+
+.thanks{
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+/* Media Query */
+
+@media (max-width: 768px) {
+    /* Media Query For Table */
+
+    table {
+        font-size: 16px;
+        box-shadow: none;
+    }
+    thead th, tbody th {
+        padding: 10px;
+    }
+    
+    tbody td {
+        padding: 10px;
+        
+    }
+    
+    tbody tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+    
+    tbody tr td, tbody tr th {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        margin-top: 10px;
+        margin-left: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    tbody tr td:nth-child(2), tbody tr td:nth-child(3), tbody tr td:nth-child(4) {
+        text-align: left;
+    }
+    
+    tbody tr td {
+        border: none;
+    }
+
+    /* Media Query For Header */
+
+    header .container{
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    header nav ul{
+        margin-top: 20px;
+    }
+
+    header nav ul li{
+        margin-left: 0;
+        margin: 5px;
+    }
+
+    /* Media Query For Picture */
+
+    .picture {
+        padding: 15px;
+    }
+
+    /* Media Query For Video */
+
+    .video {
+        padding: 15px;
+
+    }
+    
+    .video h2 {
+        font-size: 20px;
+    }
+
+    /* Media Query For Audio */
+
+    .audio {
+      padding: 15px;
+    }
+  
+    .audio h2 {
+      font-size: 20px;
+    }
+}
+
+  
+/* Media Query for Small Screens */
+
+@media (max-width: 480px) {
+    /* Media Query For Table */
+
+    table {
+        font-size: 14px;
+    }
+    
+    thead th, tbody th {
+        padding: 8px;
+    }
+    
+    tbody td {
+        padding: 8px;
+    }
+    
+    caption {
+        font-size: 20px;
+    }
+
+    /* Medai Query For NAV And Header */
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav ul li {
+        margin: 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    section {
+        padding: 10px;
+    }
+    
+    header h1 {
+        font-size: 20px;
+    }
+
+    /* Media Query For Picture */
+    
+    .picture {
+        padding: 15px;
+    }
+
+    /* Media Query For Video */
+
+    .video {
+        padding: 15px;
+    }
+
+    .video h2 {
+        font-size: 20px;
+    }
+
+    /* Media Query For Audio */
+
+    .audio {
+      padding: 15px;
+    }
+  
+    .audio h2 {
+      font-size: 20px;
+    }
+}
+
+/* styling the footer */
+
+footer{
+    background-color: rgb(112, 112, 155);
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.e h2{
+    color: aliceblue;
+}
+
+.e img{
+    margin: 0 5px;
+    transition: transform 0.3s ease
+}
+
+.e img:hover{
+    transform: scale(1.2);
+}
+
+footer .e{
+    padding-bottom: 20px;
+}
+
+footer h2{
+    text-align: left;
+}
+
+.l{
+    margin-top: 300px;
+}
