@@ -58,12 +58,12 @@
           <div class="name">
             <div class="first-name">
               <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+              <input type="text" id="firstName" name="firstName" placeholder="Enter first name" autocomplete="username" required>
             </div>
             
             <div class="last-name">
               <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+              <input type="text" id="lastName" name="lastName" placeholder="Enter last name" autocomplete="username" required>
             </div>  
           </div>
           <br>
@@ -94,7 +94,7 @@
             <div class="email">
               <label for="emailAddress">Email Address</label>
               <span class="icon"><ion-icon name="mail"></ion-icon></span>
-              <input type="email" id="emailAddress" placeholder="Enter email address" required>
+              <input type="email" id="emailAddress" placeholder="Enter email address" autocomplete="useremail"required>
             </div>  
             <div class="phone">
               <label for="phoneNumber">Phone Number</label>
@@ -144,13 +144,13 @@
             <div class="password">
               <label for="password"> Password</label>
               <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-              <input type="password" id="password" name="password" oninput="checkPasswordStrength(this.value)" placeholder="Enter Password" required>
+              <input type="password" id="password" name="password" placeholder="Enter Password" autocomplete="new-password" required>
             </div>  
 
             <div class="confirm">
               <label for="confirmPassword"> Confirm Password</label>
               <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-              <input type="password" id="confirmPassword" name="confirmPassword" oninput="checkPasswordStrength(this.value)" placeholder="Confirm Password" required>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" autocomplete="new-password" required>
             </div>  
           </div>
           
