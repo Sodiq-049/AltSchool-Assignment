@@ -553,7 +553,7 @@ footer .e{
         padding: 20px;
     }
 
-    button{
+    .submit{
         width: 92%;
         text-align: center;
         margin-left: 20px;
@@ -689,7 +689,7 @@ footer .e{
         padding: 20px;
     }
 
-    button{
+    .submit{
         width: 92%;
         text-align: center;
         margin-left: 20px;
