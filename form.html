@@ -3,177 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apply to AltSchool Africa - Learn highly sought after skills.">
-    <meta name="keywords" content="AltSchool, application form, education, online learning">
-    <meta name="author" content="Your Name">
-    <title>AltSchool Application Form</title>
+    <title>Assignment 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>Altschool Application Form</h1>
-            <nav aria-label="Main Navigation">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#form">Form</a></li>
-                    <li><a href="./ASG2/index2.html" target="_blank">Table</a></li>
-                    <li><a href="./ASG2/page2.html" target="_blank">Media</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>  
-    </header>
+    the header section
 
-    <!-- Main Content Section -->
-    <main>
-        <section class="image">
-            <div class="sch">
-                <img src="./Asset/image/https___res.cloudinary.com_talentql-inc_image_upload_v1703728439_student-portal_academic_zzg4hi.png" 
-                     alt="AltSchool Logo" width="500">
+  <div id="top"></div>
+  <div id="form"></div>
+
+  <header>
+    <div class="container">
+      <h1>Altschool Application Form</h1>
+
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#form">Form</a></li>
+          <li><a href="./ASG2/index2.html">Table</a></li>
+          <li><a href="./ASG2/page2.html">Media</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>  
+      </nav> 
+    </div>  
+  </header>   
+
+  <!-- the main section -->
+
+  <div class="contain">
+    <section class="image">
+      <div class="sch"><img src="./Asset/image/https___res.cloudinary.com_talentql-inc_image_upload_v1703728439_student-portal_academic_zzg4hi.png" alt="AltSchool Logo" width="500"></div>
+      <nav>
+        <div class="social">
+          <p class="info"><b>Learn highly sought after skills without hassle.</b></p>
+          <a href="https://twitter.com/altschoolafrica" target="_blank"> <img src="./Asset/image/teitter.png" alt="Follow on X" width="20" height="20"></a>
+          <a href="https://instagram.com/altschoolafrica"> <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Follow on Instagram" width="20" height="20"></a>
+          <a href="https://facebook.com/AltSchoolAfrica"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Follow on Facebook" width="20" height="20"></a>
+          <a href="https://linkedin.com/school/altschoolafrica"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="Follow on LinkedIn" width="20" height="20"></a>
+        </div>
+
+        <p class="number"><a href="tel:0800ALTSCHOOL">Tel: 0800ALTSCHOOL.</a></p>
+        <p class="message">©2024 AltSchool Africa. All rights reserved.</p>
+      </nav>
+    </section>
+
+    <!-- form section -->
+
+    <section class="fill">
+        <h2>Signup</h2>
+        <p class="step">Take the next steps to apply at AltSchool Africa</p>
+        <form action="#">
+          <!-- name section -->
+
+          <div class="name">
+            <div class="first-name">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
             </div>
-            <nav aria-label="Social Media Links">
-                <div class="social">
-                    <p class="info"><b>Learn highly sought after skills without hassle.</b></p>
-                    <a href="https://twitter.com/altschoolafrica" target="_blank"><img src="./Asset/image/teitter.png" 
-                        alt="Follow on Twitter" width="20" height="20"></a>
-                    <a href="https://instagram.com/altschoolafrica" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" 
-                        alt="Follow on Instagram" width="20" height="20"></a>
-                    <a href="https://facebook.com/AltSchoolAfrica" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" 
-                        alt="Follow on Facebook" width="20" height="20"></a>
-                    <a href="https://linkedin.com/school/altschoolafrica" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" 
-                        alt="Follow on LinkedIn" width="20" height="20"></a>
-                </div>
-                <p class="number"><a href="tel:0800ALTSCHOOL">Tel: 0800ALTSCHOOL</a></p>
-                <p class="message">©2024 AltSchool Africa. All rights reserved.</p>
-            </nav>
-        </section>
+            
+            <div class="last-name">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+            </div>  
+          </div>
+          <br>
 
-        <!-- Form Section -->
-        <section class="fill" id="form">
-            <h2>Signup</h2>
-            <p class="step">Take the next steps to apply at AltSchool Africa</p>
-            <form action="#">
-                <!-- Name Section -->
-                <div class="name">
-                    <div class="first-name">
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
-                    </div>
-                    <div class="last-name">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
-                    </div>  
-                </div>
-                <br>
+          <!-- gender section -->
 
-                <!-- Gender Section -->
-                <div class="gender">
-                    <div class="male-female">
-                        <label for="gender">Gender</label>
-                        <select id="gender" name="gender" required>
-                            <option value="">Select gender</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>  
-                    <div class="birth">
-                        <label for="dateOfBirth">Date of Birth</label>
-                        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
-                    </div>  
-                </div>
-                <br>
+          <div class="gender">
+            <div class="male-female">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>  
 
-                <!-- Contact Section -->
-                <div class="form-group">
-                    <div class="email">
-                        <label for="emailAddress">Email Address</label>
-                        <input type="email" id="emailAddress" name="emailAddress" placeholder="Enter email address" required>
-                    </div>  
-                    <div class="phone">
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="text" id="phoneNumber" name="phoneNumber" placeholder="09023226940" required>
-                    </div>  
-                </div>
-                <br>
+            <div class="birth">
+              <label for="dateOfBirth">Date of Birth</label>
+              <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="dd/mm/yyyy" required>
+            </div>  
+          </div>
+          <br>
 
-                <!-- Address Section -->
-                <div class="country">
-                    <div class="con">
-                        <label for="country">Country</label>
-                        <select id="country" name="country" required>
-                            <option value="">Select country</option>
-                            <option value="Nigeria">Nigeria</option>
-                            <option value="London">London</option>
-                            <option value="America">America</option>
-                            <option value="Ghana">Ghana</option>
-                        </select>
-                    </div>  
-                    <div class="city">
-                        <label for="stateCity">State/City of Residence</label>
-                        <input type="text" id="stateCity" name="stateCity" placeholder="Enter your state of residence" required>
-                    </div>  
-                </div>
-                <br>
+          <!-- contact section -->
 
-                <!-- Channel Section -->
-                <div class="channel">
-                    <label for="channel">How did you hear about us?</label>
-                    <select id="channel" name="channel" required>
-                        <option value="">Select channel</option>
-                        <option value="Twitter">Twitter</option>
-                        <option value="Instagram">Instagram</option>
-                        <option value="Facebook">Facebook</option>
-                        <option value="LinkedIn">LinkedIn</option>
-                    </select>
-                </div>
-                <br>
+          <div class="form-group">
+            <div class="email">
+              <label for="emailAddress">Email Address</label>
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" id="emailAddress" placeholder="Enter email address" required>
+            </div>  
+            <div class="phone">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="text" id="phoneNumber" name="phoneNumber" placeholder="09023226940" value="" required>
+            </div>  
+          </div>
+          <br>
 
-                <!-- Password Section -->
-                <div class="form-group">
-                    <div class="password">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" placeholder="Enter Password" required>
-                    </div>  
-                    <div class="confirm">
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
-                    </div>  
-                </div>
-                
-                <!-- Terms & Conditions Section -->
-                <div class="chat-box">
-                    <p>
-                        <input type="checkbox" name="myCheckbox" required> 
-                        By clicking continue, I agree to the 
-                        <a href="https://www.altschoolafrica.com/terms-and-conditions" target="_blank">Terms of Use</a> 
-                        and acknowledge that I have read the 
-                        <a href="https://www.altschoolafrica.com/privacy-policy" target="_blank">Privacy Policy</a>.
-                    </p>
-                </div>  
-                <button class="submit" type="submit">Submit</button>
-            </form>   
-        </section>
-    </main>  
+          <!-- address section -->
 
-    <!-- Footer Section -->
-    <footer>
-        <section id="contact">
-            <h2>Contact</h2>
-            <address>
-                You can contact me via:
-                <p><img src="https://cdn-icons-png.flaticon.com/128/1/1257.png" alt="Phone" width="20" height="20"> 09023226940</p>
-            </address>
-            <nav aria-label="Social Media Links">
-                <a href="https://www.facebook.com/ogunmola.sodiq.3?mibextid=LQQJ4d" target="_blank"><img src="./Asset/image/fa.webp" alt="Facebook" width="30" height="30"></a>
-                <a href="https://www.instagram.com/invites/contact/?igsh=1f5z8xmrs9mfw&utm_content=6n38de8" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" width="30" height="30"></a>
-                <a href="https://x.com/sodiq_ogunmola" target="_blank"><img src="./Asset/image/teitter.png" alt="Twitter" width="30" height="30"></a>
-                <a href="https://www.linkedin.com/in/sodiq-ogunmola-10a111277" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30"></a>
-            </nav>
-            <p>©2024 AltSchool Africa. All rights reserved.</p>
-        </section>
-    </footer>
+          <div class="country">
+            <div class="con">
+              <label for="country">Country</label>
+              <select id="country" name="country" required>
+                <option value="">Select country</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="London">London</option>
+                <option value="America">America</option>
+                <option value="Ghana">Ghana</option>
+              </select>
+            </div>  
+
+            <div class="city">
+              <label for="stateCity">State/City of Residence</label>
+              <input type="text" id="stateCity" name="stateCity" placeholder="Enter your state of residence" required>
+            </div>  
+          </div>
+          <br>
+
+          <!-- channel section -->
+
+          <div class="channel">
+            <label for="channel">How did you hear about us?</label>
+            <select id="channel" name="channel" required>
+              <option value="">Select channel</option>
+              <option value="Twitter">Twitter</option>
+              <option value="Instagram">Instagram</option>
+              <option value="Facebook">Facebook</option>
+              <option value="LinkedIn">LinkedIn</option>
+            </select>
+          </div>
+          <br>
+
+          <!-- password section -->
+
+          <div class="form-group">
+            <div class="password">
+              <label for="password"> Password</label>
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            </div>  
+
+            <div class="confirm">
+              <label for="confirmPassword"> Confirm Password</label>
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+            </div>  
+          </div>
+          
+          <!-- terms & condition section-->
+
+          <div class="chat-box">
+            <div class="chat-icon"></div>
+            <p><input type="checkbox" name="myCheckbox" required> By clicking continue, I agree to the <a href="https://www.altschoolafrica.com/terms-and-conditions">Terms of Use</a> and acknowledge that I have read the <a href="https://www.altschoolafrica.com/privacy-policy">Privacy Policy.</a></p>
+          </div>  
+          <button class="submit" type="submit">Submit</button>
+        </form>   
+    </section>    
+  </div>  
+
+  <!-- the footer section -->
+   
+  <footer>
+    <section class="e" id="contact">
+      <h2>Contact</h2>
+      <p>
+          You can contact me via:
+      </p>
+      <p>
+          <img src="https://cdn-icons-png.flaticon.com/128/1/1257.png" alt="Phone" width="20" height="20"> 09023226940
+      </p>
+      <nav>
+          <a href="https://www.facebook.com/ogunmola.sodiq.3?mibextid=LQQJ4d"> <img src="./Asset/image/fa.webp" alt="Facebook" width="30" height="30"></a>
+          <a href="https://www.instagram.com/invites/contact/?igsh=1f5z8xmrs9mfw&utm_content=6n38de8"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" width="30" height="30"></a>
+          <a href="https://x.com/sodiq_ogunmola"> <img src="./Asset/image/teitter.png" alt="Twitter" width="30" height="30"></a>
+          <a href="https://www.linkedin.com/in/sodiq-ogunmola-10a111277"> <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" width="30" height="30"></a>
+      </nav>
+  </section>
+  
+    <a href="#top">Scroll to Top</a>
+  </footer>
+
 </body>
 </html>
