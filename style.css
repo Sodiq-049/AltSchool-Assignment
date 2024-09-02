@@ -339,7 +339,7 @@ h2{
 
 /* styling chat-box */
 
-button{
+.submit{
     width: 100%;
     grid-column: 1 / span 2;
     padding: 1rem 2rem;
@@ -353,18 +353,18 @@ button{
     transition: all 0.3s;
 }
 
-button:hover {
+.submit:hover {
     background-color: #6A6FF5;
     opacity: 0.8;
     box-shadow: 2px 6px 0 2px rgba(202, 196, 196, 0.164);
     transition: all 0.3s;
   }
 
-.fa-solid{
+/* .submit{
     color: white;
     font-size: 1rem;
     width: 7%;
-}
+} */
 
 /* styling footer */
 
